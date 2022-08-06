@@ -1,0 +1,12 @@
+In this project, users will be able to create different characters 
+with different values being added by them. 
+For example, each value can be the 
+character's name, height, age, eye color and it will be placed on a table.
+They can then look at other characters that different users have made, 
+create another one, edit one they made, or delete it. 
+
+As for extra additions:
+I would like to add more form types to the characters like descriptions for
+the character.
+I would like to make another page for viewing more in depth detail of the character.
+I would like to have the table be able to sort itself alphabetically, by age, by height, or by creator. 

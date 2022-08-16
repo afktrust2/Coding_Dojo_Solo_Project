@@ -14,7 +14,7 @@ const Update = (props) => {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8000/api/products/${id}`)
+            .get(`http://localhost:8000/api/characters/${id}`)
             .then((res) => {
                 console.log(res.data);
                 setName(res.data.name);
@@ -28,7 +28,7 @@ const Update = (props) => {
     const submitHandler = (e) => {
         e.preventDefault();
 
-        axios.put(`http://localhost:8000/api/products/${id}`, {
+        axios.put(`http://localhost:8000/api/characters/${id}`, {
                 name, 
                 age,
                 height,

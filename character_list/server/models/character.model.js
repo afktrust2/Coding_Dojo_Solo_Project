@@ -15,7 +15,7 @@ const CharacterSchema = new mongoose.Schema({
 }, {timestamps: true})
 
 
-const Character = mongoose.model("Character", CharacterSchema);
+const Character = mongoose.model("characters", CharacterSchema);
 
 
 module.exports = Character;

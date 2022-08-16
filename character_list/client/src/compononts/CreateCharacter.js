@@ -10,7 +10,7 @@ const NewCharacter = (props) => {
     const submitHandler = (e)=>{
     e.preventDefault();
 
-    axios.post("http://localhost:8000/api/Characters",{
+    axios.post("http://localhost:8000/api/characters",{
         name, 
         age, 
         height

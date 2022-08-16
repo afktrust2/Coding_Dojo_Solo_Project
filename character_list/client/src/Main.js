@@ -1,19 +1,19 @@
 import React, { useState } from "react";
-import NewProduct from "../components/Product";
+import NewCharacter from "../components/CreateCharacter";
 import Display from "../components/DisplayAll";
 
 const Main = (props) => {
-    const [productList, setProductList] = useState([]);
+    const [characterList, setCharacterList] = useState([]);
 
     return (
         <div>
-            <NewProduct
-                productList={productList}
-                setProductList={setProductList}
+            <NewCharacter
+                CharacterList={characterList}
+                setCharacterList={setCharacterList}
             />
             <Display
-                productList={productList}
-                setProductList={setProductList}
+                CharacterList={characterList}
+                setCharacterList={setCharacterList}
             />
         </div>
     );

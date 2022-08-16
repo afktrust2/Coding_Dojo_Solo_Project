@@ -1,5 +1,5 @@
 import './App.css';
-import NewCharacter from './compononts/Product';
+import NewCharacter from './compononts/CreateCharacter';
 
 function App() {
   return (

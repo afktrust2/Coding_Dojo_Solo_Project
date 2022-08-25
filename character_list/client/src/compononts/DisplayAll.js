@@ -21,13 +21,13 @@ const Display = (props) => {
                 All Characters:
             </header>
             {
-                characterList.map((character, index) => (
-                    <div key={character._id}>
+                characterList.map((character, index) => 
+                    <div key={index}>
                         <Link to={`/characters/${character._id}`}>
                             {character.name}
                         </Link>
                     </div>
-                ))
+                )
             }
         </div>
     );

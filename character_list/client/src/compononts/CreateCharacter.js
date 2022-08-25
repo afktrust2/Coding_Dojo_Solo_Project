@@ -53,7 +53,7 @@ const NewCharacter = (props) => {
                 </div>
                 <br/>
                 <div className="form-fields">
-                    <label>Height</label>
+                    <label>Height(in meters)</label>
                     <input
                         onChange={(e) => setHeight(e.target.value)}
                         value={height}

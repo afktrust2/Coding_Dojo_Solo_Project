@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const Characters = (props) => {
+const Display = (props) => {
     
     const { characterList, setCharacterList} = props;
 
@@ -10,8 +10,7 @@ const Characters = (props) => {
         axios.get("http://localhost:8000/api/characters")
             .then((res) => {
                 console.log(res.data);
-                setCharacterList(res.data);
-                
+                setCharacterList(res.data); 
             })
             .catch((err) => console.log(err));
     }, []); 
@@ -23,8 +22,8 @@ const Characters = (props) => {
             </header>
             {
                 characterList.map((character, index) => (
-                    <div key={index}>
-                        <Link to={`/character/${character._id}`}>
+                    <div key={character._id}>
+                        <Link to={`/characters/${character._id}`}>
                             {character.name}
                         </Link>
                     </div>
@@ -34,4 +33,4 @@ const Characters = (props) => {
     );
 };
 
-export default Characters;
+export default Display;

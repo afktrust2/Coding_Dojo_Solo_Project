@@ -1,21 +1,23 @@
 const mongoose = require("mongoose");
 const CharacterSchema = new mongoose.Schema({
     name:{
-        type: String
+        type: String,
     },
 
     age:{
-        type: Number
+        type: Number,
     },
 
     height:{
-        type: Number
-    }
+        type: Number,
+    },
 
-}, {timestamps: true})
+    }, 
+    {timestamps: true},
+);
 
 
-const Character = mongoose.model("characters", CharacterSchema);
+const Character = mongoose.model("Character", CharacterSchema);
 
 
 module.exports = Character;

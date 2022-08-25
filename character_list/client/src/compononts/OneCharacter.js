@@ -20,8 +20,8 @@ const OneCharacter = (props) => {
     return (
         <div className="oneCharacter-component">
             <h2>{oneCharacter.name}</h2>
-            <p>Price: ${oneCharacter.price}</p>
-            <p>Description: {oneCharacter.description}</p>
+            <p>Age:{oneCharacter.age}</p>
+            <p>Height: {oneCharacter.height}</p>
         </div>
     );
 };
